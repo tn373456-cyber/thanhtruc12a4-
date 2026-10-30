@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang Web Của Tôi</title>
+    <style>
+        /* CSS Reset & Cơ bản */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #f4f7f6;
+            color: #333;
+            line-height: 1.6;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        /* Thanh điều hướng */
+        header {
+            background: linear-gradient(135deg, #007bff, #00d2ff);
+            color: white;
+            padding: 2rem 1rem;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        header p {
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+
+        /* Nội dung chính */
+        main {
+            max-width: 800px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+            flex: 1;
+        }
+
+        .card {
+            background: white;
+            padding: 2rem;
+            border-radius: 12px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+            margin-bottom: 1.5rem;
+        }
+
+        .card h2 {
+            color: #007bff;
+            margin-bottom: 1rem;
+            border-bottom: 2px solid #eef2f5;
+            padding-bottom: 0.5rem;
+        }
+
+        /* Nút bấm tương tác */
+        .btn {
+            display: inline-block;
+            background-color: #007bff;
+            color: white;
+            padding: 0.75rem 1.5rem;
+            border: none;
+            border-radius: 6px;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: background 0.3s ease;
+            margin-top: 1rem;
+        }
+
+        .btn:hover {
+            background-color: #0056b3;
+        }
+
+        /* Chân trang */
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+            font-size: 0.9rem;
+        }
+
+        /* Responsive cho thiết bị di động */
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 1.8rem;
+            }
+            main {
+                margin: 1rem auto;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header / Banner -->
+    <header>
+        <h1>Chào Mừng Đến Với Trang Web Của Tôi!</h1>
+        <p>Trang web được lưu trữ hoàn toàn miễn phí trên GitHub Pages</p>
+    </header>
+
+    <!-- Nội dung chính -->
+    <main>
+        <section class="card">
+            <h2>Giới thiệu</h2>
+            <p>Xin chào! Đây là trang web cá nhân đầu tiên của tôi. Bạn có thể tự do chỉnh sửa tệp <code>index.html</code> này để thay đổi nội dung, màu sắc cũng như giao diện theo ý muốn.</p>
+        </section>
+
+        <section class="card">
+            <h2>Tính năng chính</h2>
+            <ul>
+                <li>Thiết kế chuẩn Responsive (hiển thị tốt trên cả điện thoại và máy tính)</li>
+                <li>Giao diện hiện đại, tối giản</li>
+                <li>Dễ dàng tùy biến mã nguồn</li>
+            </ul>
+            
+            <button class="btn" onclick="sayHello()">Nhấn vào đây!</button>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Trang Web Cá Nhân. Thiết kế bởi Bạn.</p>
+    </footer>
+
+    <!-- JavaScript tương tác -->
+    <script>
+        function sayHello() {
+            alert('Cảm ơn bạn đã ghé thăm trang web!');
+        }
+    </script>
+</body>
+</html>
